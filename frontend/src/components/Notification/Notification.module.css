@@ -1,0 +1,46 @@
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-light);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  /* Начальное состояние для анимации */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInOut 3.3s ease-in-out forwards; 
+}
+
+/* Типы уведомлений */
+.success {
+  background-color: var(--color-primary-green); /* Цвет успеха */
+}
+
+.error {
+  background-color: var(--color-discount-red); /* Цвет ошибки */
+}
+
+.info {
+  background-color: var(--color-text-light);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.closeButton:hover {
+  opacity: 0.8;
+}

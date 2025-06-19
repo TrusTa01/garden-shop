@@ -1,0 +1,250 @@
+/* Hero секция */
+.heroSection {
+  background: url("/public/assets/images/hero-background.jpg") no-repeat center
+    center/cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-top: 0;
+  max-width: var(--max-content-width);
+  margin: 0px auto;
+}
+
+.heroContent {
+  max-width: 700px;
+}
+
+.heroContent h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-left: 10px;
+}
+
+.checkOutButton {
+  background-color: var(--color-primary-green);
+  color: var(--color-text-light);
+  width: 200px;
+  height: 50px;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/*  для Categories и Sales */
+.sectionHeader {
+  max-width: 1440px;
+  margin: 40px auto 20px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 15px;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5em;
+  position: relative;
+  margin-right: 20px;
+}
+
+.sectionHeader h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-green);
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--color-light-gray);
+  flex-grow: 1; /* <--- Заставляет черту занимать все доступное пространство */
+  margin-left: 20px;
+  margin-right: 0;
+  min-width: 10px; /* Минимальная ширина, чтобы не исчезла при очень узком пространстве */
+}
+
+.categoriesTitle,
+.salesTitle {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text-dark);
+  margin: 0;
+  padding-bottom: 8px;
+  position: relative;
+  margin-left: 5px; /* Отступ слева для выравнивания с кнопкой */
+}
+
+.salesTitle {
+  margin-left: 10px;
+}
+
+/* кнопки для Categories и Sales */
+
+.categoriesButton,
+.salesButton {
+  background-color: transparent;
+  color: var(--color-light-gray);
+  border: 1px solid var(--color-light-gray);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.salesButton {
+  height: 40px;
+  width: 120px;
+}
+
+.categoriesButton:hover,
+.salesButton:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+.categoriesButton:hover,
+.salesButton:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+.allCategoriesLink:hover,
+.allSalesLink:hover {
+  color: var(--primary-green);
+}
+
+.categoriesGrid {
+  max-width: 1420px;
+  display: grid;
+  margin-inline: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+/* Products Grid для Sales Section */
+.productsGrid {
+  max-width: 1440px;
+  margin: 0 auto 60px;
+  padding: 0 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Форма */
+
+.discountFormSection {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-inline: 50px;
+  background-image: url("/public/assets/images/form-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1350px;
+  margin: 60px auto;
+}
+
+.discountForm {
+  position: absolute;
+  top: 60%;
+  right: 100px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 350px;
+  padding: 25px;
+  border-radius: 8px;
+  z-index: 2;
+  max-width: calc(100% - 40px);
+}
+
+.discountInput {
+  width: 120%;
+  padding: 12px 15px;
+  color: var(--color-text-light);
+  border: 1px solid var(--color-text-light);
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.discountInput::placeholder {
+  color: var(--color-text-light);
+}
+
+.discountInput:focus {
+  outline: none;
+  color: var(--color-text-light);
+}
+
+.discountSubmitButton {
+  padding: 12px 20px;
+  color: var(--color-text-dark);
+  border: var(--color-text-light);
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 120%;
+  align-self: flex-start;
+}
+
+.requestSubmitted {
+  color: var(--color-primary-green);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px;
+  background-color: var(--color-text-light);
+  border-radius: 4px;
+  width: 120%;
+}
+
+/* --- Медиа-запросы для адаптации на больших экранах --- */
+
+@media (min-width: 1441px) {
+  .discountFormSection {
+    max-width: var(--max-content-width);
+  }
+}

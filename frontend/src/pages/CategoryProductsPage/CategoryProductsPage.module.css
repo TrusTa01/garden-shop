@@ -1,0 +1,32 @@
+.categoryProductsPage {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.categoryProductsPage h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: var(--color-text-dark);
+  margin-inline: 20px;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.loadingMessage,
+.errorMessage,
+.noProductsMessage {
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--color-text-dark);
+  margin-top: 50px;
+}
+
+.errorMessage {
+  color: var(--color-error-red);
+}

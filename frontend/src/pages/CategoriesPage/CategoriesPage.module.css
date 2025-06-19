@@ -1,0 +1,17 @@
+.categoriesPage {
+    max-width: 1441px;
+    margin: 40px auto;
+    padding-inline: 20px;
+}
+
+.categoriesPage h1 {
+    margin: 40px 20px 20px 20px;
+    color: var(--color-text-dark);
+    font-size: 45px;
+}
+
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    margin: 40px auto;
+}

@@ -1,0 +1,74 @@
+.footerContent {
+  max-width: var(--max-content-width); /* Общая максимальная ширина */
+  margin: 0 auto; /* Центрируем содержимое футера */
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.contactInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footerTitle {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 40px 45px 20px 45px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 5fr 4fr; /* неравные колонки */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-inline: 45px;
+}
+
+.contactItem {
+  background-color: #c9cbcc; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contactItemTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-light-gray);
+  margin-bottom: 10px;
+}
+
+.contactItemText {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--light-gray);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialIcon {
+  transition: color 0.3s ease;
+}
+
+.mapContainer {
+ margin: 0 45px 80px 45px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

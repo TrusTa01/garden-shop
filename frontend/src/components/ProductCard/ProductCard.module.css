@@ -1,0 +1,125 @@
+.productCard {
+  background-color: var(--color-text-light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:focus {
+  transform: translateY(0);
+  box-shadow: none;
+  outline: none;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.addToCartButton {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary-green);
+  color: var(--color-text-light);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 0;
+  z-index: 10;
+  width: 300px;
+  transition: background-color 0.3s ease,
+    transform 0.1s ease-out,
+    opacity 0.3s ease;
+  outline: none;
+}
+
+.productCard:hover .addToCartButton {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.imageLink {
+  position: relative;
+  display: block;
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-primary-green);
+  color: var(--color-text-light);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.productInfo {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+  flex-grow: 1;
+  padding-inline: 10px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.currentPrice {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--color-black);
+  padding-inline: 10px;
+}
+
+.oldPrice {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--color-light-gray);
+  text-decoration: line-through;
+  padding-inline: 0px;
+}
+
+.originalPrice {
+  font-size: 1em;
+  color: var(--color-light-gray);
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.addToCartButton:hover {
+  background-color: var(--color-black);
+}
