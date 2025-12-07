@@ -1,7 +1,7 @@
 # Frontend
 
-nmp i 
-nmp start
+### nmp i
+### nmp start
 
 ## Технические требования
 
